@@ -71,9 +71,6 @@
 									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
 								</ul>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="login.html">Account</a>
-							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Account</a>
@@ -134,24 +131,31 @@ border-radius: 20px;
 ">
 <div style="margin-top: 20px;">
         <label style="color: red;font-weight: bold; font-size: 25px;">*</label>
-        <label style="font-weight: bold; font-size: 25px;">Tên sản phẩm:</label>
+        <label style="font-weight: bold; font-size: 25px;">Tên sản phẩm :</label>
             <input type="text" placeholder="Electrolux..." required>
 <br>
 <br>
         <label style="color: red;font-weight: bold; font-size: 25px;">*</label>
-        <label style="font-weight: bold; font-size: 25px;">Media:</label>
-            <input type="file" required>
+        <label style="font-weight: bold; font-size: 25px;">Picture :</label>
+        <input type="file" required>
 <br>
 <br>
         <label style="color: red;font-weight: bold; font-size: 25px;">*</label>
-        <label style="font-weight: bold; font-size: 25px;">Loại:</label>
-        <input type="text" placeholder="TV, Washing Machine,...">    
+        <label style="font-weight: bold; font-size: 25px;">Loại :</label>
+        <input list="electronics"/>
+			<datalist id = "electronics">
+			    <option value="TV"></option>
+			    <option value="Washing Machine"></option>
+			    <option value="Induction Stove"></option>
+			    <option value="Air Conditioner"></option>
+			    <option value="Air Purifier"></option>
+			</datalist>   
 <br>
 <br>
 
         <label style="color: red;font-weight: bold; font-size: 25px; ">*</label>
-        <label style="font-weight: bold; font-size: 25px;">Giá:</label>
-            <input type="text" placeholder="0.000000" required>
+        <label style="font-weight: bold; font-size: 25px;">Giá :</label>
+        <input type="text" placeholder="$USD" required>
 <br>
 <br>
         <label style="font-weight: bold; font-size: 25px; margin-left: 220px;">Mô tả sản phẩm</label>
