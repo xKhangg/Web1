@@ -18,101 +18,106 @@
 	<title>IKEA</title>
 
 	<!--
-            CSS
-            ============================================= -->
+		CSS
+		============================================= -->
 	<link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/owl.carousel.css"> 
-	<link rel="stylesheet" href="css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/nouislider.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/main.css"> 
-	<style>
-		.search-form {
-  		display: flex;
-  		flex-direction: column;
-  		align-items: center;
-		}
-	</style>
+	<link rel="stylesheet" href="css/main.css">
 </head>
-
-<body id="category">
-
-	<!-- Start Header Area -->
-	<header class="header_area sticky-header">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light main_box">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html">
-						<img src="img/electric-appliances.png" alt="" width="60">
-						<span>I K E A</span>
-					</a>
-					<input type="text" id="tim" placeholder="I want to search for...." style="border-radius: 32px; padding: 8px; width: 415px;"  >
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item submenu dropdown active">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Category</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="category_admin.html">Television</a></li>
-									<li class="nav-item"><a class="nav-link" href="category_admin.html">Refrigerator</a></li>
-									<li class="nav-item"><a class="nav-link" href="category_admin.html">Washing Machine</a></li>
-									<li class="nav-item"><a class="nav-link" href="category_admin.html">Air Conditioner</a></li>
-									<li class="nav-item"><a class="nav-link" href="category_admin.html">Induction Stove</a></li>
-								</ul>
-							</li>
-							
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Admin</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="Admin_information.html">Information</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="thongkekhachhang.html">User Statistics</a></li>
-									<li class="nav-item"><a class="nav-link" href="thongkemathang.html">Product Statistics</a></li>
-									<li class="nav-item"><a class="nav-link" href="bill_admin.html">Bill Manage</a></li>
-									<li class="nav-item"><a class="nav-link" href="user_manage.html">User Manage</a></li>
-								
-								</ul>
-							</li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><span class="ti-bag"></span></a></li>
-							
-						</ul>
+<!-- Start Header Area -->
+<header class="header_area sticky-header">
+	<div class="main_menu">
+		<nav class="navbar navbar-expand-lg navbar-light main_box">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<a class="navbar-brand logo_h" href="index_admin.html">
+					<img src="img/electric-appliances.png" alt="" width="60">
+					<span>I K E A</span>
+				</a>
+				<div style="position: relative;border: 1px  black;border-radius: 32px;overflow: hidden;border-top: none;">
+					<input  type="text" placeholder="I want to search for...." style="border-radius: 32px; padding: 8px; width: 415px; border-width: 2px;  ">
+					<button id="myButton"style=" position: absolute; top: 0; right: 0; margin-top: 0px; padding: 10px 18px; display:inline-block; border: none;background-color: #ff6c00; cursor: pointer; "><span class="lnr lnr-magnifier" style="color: white;"></span></button> 
 					</div>
-				</div>
-			</nav>
-		</div>
-		
-	</header>
-	<!-- End Header Area -->
-
-	<!-- Start Banner Area -->
-	<section class="banner-area organic-breadcrumb">
-		<div class="container">
-			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
-				<div class="col-first">
-					<h1>Category Page</h1>
-					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#">Category<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Television</a>
-					</nav>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+					<ul class="nav navbar-nav menu_nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index_admin.html">Home</a></li>
+						<li class="nav-item submenu dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Category</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Television</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Refrigerator</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Washing Machine</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Air Conditioner</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Induction Stove</a></li>
+							</ul>
+						</li>
+						 <!--
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Account</a>
+						</li> -->
+						<li class="nav-item submenu dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Admin</a>
+							 <ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="Admin_information.html">Information</a></li>
+								<li class="nav-item"><a class="nav-link" href="thongkekhachhang.html">User Statistics</a></li>
+								<li class="nav-item"><a class="nav-link" href="thongkemathang.html">Product Statistics</a></li>
+								<li class="nav-item"><a class="nav-link" href="bill_admin.html">Bill Manage</a></li>
+								<li class="nav-item"><a class="nav-link" href="Bill_filter.html">Bill Filter</a></li>
+								<li class="nav-item"><a class="nav-link" href="user_manage.html">User Manage</a></li>
+							</ul>
+						</li> <!--
+						<li class="nav-item submenu dropdown"> 
+							<a class="nav-link" href="contact.html">Contact</a> 
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Account</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+							</ul> 
+						</li> -->
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="nav-item"><span class="ti-bag"></span></a></li>
+					
+					</ul>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- End Banner Area -->
+		</nav>
+	</div>
+	
+</header>
+<!-- End Header Area --> 
+<!-- Start Banner Area -->
+<section class="banner-area organic-breadcrumb" >
+    <div class="container">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            <div class="col-first">
+                <h1>Category Admin Page</h1>
+                <nav class="d-flex align-items-center">
+                    <a href="index_admin.html">Home<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="#">Category<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="category_admin.html">Television</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Banner Area -->
+ <br>
+ <br>
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-3 col-lg-4 col-md-5">
@@ -151,7 +156,9 @@
 									<label for="Above 20.000.000">Above $1000</label>
 								</div>
     							<br>
-    							<button type="search">Find</button>
+    							<a href="search_result_admin.html">
+									<input type="button" value="Find" style="border: 2px solid black; border-radius: 2px;"></input>
+								</a>
 								<button type="reset">Reset</button>
       						</div>
     					</form>
@@ -318,7 +325,7 @@
 							<option value="1">Price: High to Low</option>
 							<option value="1">Price: High to Low</option>
 						</select> -->
-						<a href="add_product.html">
+						<a href="add-product.html">
 							<button style="padding: 8px;">+ Add Product</button>
 						</a>  
 					</div> <!--
@@ -346,11 +353,11 @@
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product.html">
+								<a href="single-product_admin.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product.html">
+									<a href="single-product_admin.html">
 										<h6>TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV</h6>
 									</a>
 									<div class="price">
@@ -358,11 +365,11 @@
 										<h6 class="l-through"></h6>
 									</div>
 									<div class="prd-bottom">
-										<a href="" class="social-info">
-											<span class="lnr lnr-magnifier"></span>
+										<a href="edit-product.html" class="social-info">
+											<span class="lnr lnr-pencil"></span>
 											<p class="hover-text">Edit</p>
 										</a>
-										<a href="" class="social-info">
+										<a href="#" class="social-info" onclick="myfunction3()">
 											<span class="lnr lnr-cross"></span>
 											<p class="hover-text">Delete</p>
 										</a>
@@ -373,11 +380,11 @@
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product.html">
+								<a href="single-product_admin.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product.html">
+									<a href="single-product_admin.html">
 										<h6>Smart Tivi Samsung 4K 55 inch UA55CU8000</h6>
 									</a>
 									<div class="price">
@@ -385,11 +392,11 @@
 										<h6 class="l-through">$210.00</h6>
 									</div>
 									<div class="prd-bottom">
-										<a href="" class="social-info">
-											<span class="lnr lnr-magnifier"></span>
+										<a href="edit-product.html" class="social-info">
+											<span class="lnr lnr-pencil"></span>
 											<p class="hover-text">Edit</p>
 										</a>
-                                        <a href="" class="social-info">
+										<a href="#" class="social-info" onclick="myfunction3()">
 											<span class="lnr lnr-cross"></span>
 											<p class="hover-text">Delete</p>
 										</a>
@@ -400,11 +407,11 @@
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product.html">
+								<a href="single-product_admin.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product.html">
+									<a href="single-product_admin.html">
 										<h6>Google Tivi Aqua QLED 4K 55 inch AQT55S80EUX</h6>
 									</a>									
 									<div class="price">
@@ -412,11 +419,11 @@
 										<h6 class="l-through">$210.00</h6>
 									</div>
 									<div class="prd-bottom">
-										<a href="" class="social-info">
-											<span class="lnr lnr-magnifier"></span>
+										<a href="edit-product.html" class="social-info">
+											<span class="lnr lnr-pencil"></span>
 											<p class="hover-text">Edit</p>
 										</a>
-										<a href="" class="social-info">
+										<a href="#" class="social-info" onclick="myfunction3()">
 											<span class="lnr lnr-cross"></span>
 											<p class="hover-text">Delete</p>
 										</a>
@@ -427,11 +434,11 @@
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product.html">
+								<a href="single-product_admin.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_4K_Crystal.png" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product.html">
+									<a href="single-product_admin.html">
 										<h6>Smart Tivi Samsung 4K Crystal UHD 70 inch UA70DU7000</h6>
 									</a>
 									<div class="price">
@@ -439,11 +446,11 @@
 										<h6 class="l-through">$210.00</h6>
 									</div>
 									<div class="prd-bottom">
-										<a href="" class="social-info">
-											<span class="lnr lnr-magnifier"></span>
+										<a href="edit-product.html" class="social-info">
+											<span class="lnr lnr-pencil"></span>
 											<p class="hover-text">Edit</p>
 										</a>
-										<a href="" class="social-info">
+										<a href="#" class="social-info" onclick="myfunction3()">
 											<span class="lnr lnr-cross"></span>
 											<p class="hover-text">Delete</p>
 										</a>
@@ -454,23 +461,23 @@
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product.html">
-									<img class="img-fluid" src="img/product/LG_4K.png" alt="">
+								<a href="single-product_admin.html">
+									<img class="img-fluid" src="img/product/TV_Samsung_4K_Crystal.png" alt="">
 								</a>								
 								<div class="product-details">
-									<a href="single-product.html">
-										<h6>Smart Tivi NanoCell LG 4K 55 inch 55NANO76SQA</h6>
+									<a href="single-product_admin.html">
+										<h6>Smart Tivi Samsung 4K Crystal UHD 70 inch UA70DU7000</h6>
 									</a>
 									<div class="price">
 										<h6>$523.37</h6>
 										<h6 class="l-through">$210.00</h6>
 									</div>
 									<div class="prd-bottom">
-										<a href="" class="social-info">
-											<span class="lnr lnr-magnifier"></span>
+										<a href="edit-product.html" class="social-info">
+											<span class="lnr lnr-pencil"></span>
 											<p class="hover-text">Edit</p>
 										</a>
-										<a href="" class="social-info">
+										<a href="#" class="social-info" onclick="myfunction3()">
 											<span class="lnr lnr-cross"></span>
 											<p class="hover-text">Delete</p>
 										</a>
@@ -481,23 +488,23 @@
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product.html">
-									<img class="img-fluid" src="img/product/Samsung_4K.png" alt="" height="200px">
+								<a href="single-product_admin.html">
+									<img class="img-fluid" src="img/product/TV_Samsung_4K_Crystal.png" alt="" height="200px">
 								</a>
 								<div class="product-details">
-									<a href="single-product.html">
-										<h6>Smart Tivi Samsung 4K 65 inch UA65CU8000</h6>
+									<a href="single-product_admin.html">
+										<h6>Smart Tivi Samsung 4K Crystal UHD 70 inch UA70DU7000</h6>
 									</a>
 									<div class="price">
 										<h6>$640.21</h6>
 										<h6 class="l-through">$210.00</h6>
 									</div>
 									<div class="prd-bottom">
-										<a href="" class="social-info">
-											<span class="lnr lnr-magnifier"></span>
+										<a href="edit-product.html" class="social-info">
+											<span class="lnr lnr-pencil"></span>
 											<p class="hover-text">Edit</p>
 										</a>
-										<a href="" class="social-info">
+										<a href="#" class="social-info" onclick="myfunction3()">
 											<span class="lnr lnr-cross"></span>
 											<p class="hover-text">Delete</p>
 										</a>
@@ -508,11 +515,11 @@
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product.html">
+								<a href="single-product_admin.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product.html">
+									<a href="single-product_admin.html">
 										<h6>TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV</h6>
 									</a>
 									<div class="price">
@@ -520,11 +527,11 @@
 										<h6 class="l-through"></h6>
 									</div>
 									<div class="prd-bottom">
-										<a href="" class="social-info">
-											<span class="lnr lnr-magnifier"></span>
+										<a href="edit-product.html" class="social-info">
+											<span class="lnr lnr-pencil"></span>
 											<p class="hover-text">Edit</p>
 										</a>
-										<a href="" class="social-info">
+										<a href="#" class="social-info" onclick="myfunction3()">
 											<span class="lnr lnr-cross"></span>
 											<p class="hover-text">Delete</p>
 										</a>
@@ -535,11 +542,11 @@
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product.html">
+								<a href="single-product_admin.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product.html">
+									<a href="single-product_admin.html">
 										<h6>TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV</h6>
 									</a>
 									<div class="price">
@@ -547,11 +554,11 @@
 										<h6 class="l-through"></h6>
 									</div>
 									<div class="prd-bottom">
-										<a href="" class="social-info">
-											<span class="lnr lnr-magnifier"></span>
+										<a href="edit-product.html" class="social-info">
+											<span class="lnr lnr-pencil"></span>
 											<p class="hover-text">Edit</p>
 										</a>
-										<a href="" class="social-info">
+										<a href="#" class="social-info" onclick="myfunction3()">
 											<span class="lnr lnr-cross"></span>
 											<p class="hover-text">Delete</p>
 										</a>
@@ -562,11 +569,11 @@
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product.html">
+								<a href="single-product_admin.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product.html">
+									<a href="single-product_admin.html">
 										<h6>TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV</h6>
 									</a>
 									<div class="price">
@@ -574,11 +581,11 @@
 										<h6 class="l-through"></h6>
 									</div>
 									<div class="prd-bottom">
-										<a href="" class="social-info">
-											<span class="lnr lnr-magnifier"></span>
+										<a href="edit-product.html" class="social-info">
+											<span class="lnr lnr-pencil"></span>
 											<p class="hover-text">Edit</p>
 										</a>
-										<a href="" class="social-info">
+										<a href="#" class="social-info" onclick="myfunction3()">
 											<span class="lnr lnr-cross"></span>
 											<p class="hover-text">Delete</p>
 										</a>
@@ -593,8 +600,8 @@
 				<div class="filter-bar d-flex flex-wrap align-items-center">
 					<div class="sorting mr-auto">
 						<select>
-							<option value="1">Show 6</option>
 							<option value="1">Show 9</option>
+							<option value="1">Show 6</option>
 							<option value="1">Show 12</option>
 						</select>
 					</div>
@@ -758,10 +765,7 @@
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h6>About Us</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
-							magna aliqua.
-						</p>
+						<p>Team 6 Project for selling Household Appliances and Electronics</p>
 					</div>
 				</div>
 				<div class="col-lg-4  col-md-6 col-sm-6">
@@ -773,21 +777,7 @@
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
 							 method="get" class="form-inline">
 
-								<div class="d-flex flex-row">
-
-									<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
-									 required="" type="email">
-
-
-									<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-									<div style="position: absolute; left: -5000px;">
-										<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-									</div>
-
-									<!-- <div class="col-lg-4 col-md-4">
-													<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-												</div>  -->
-								</div>
+								
 								<div class="info"></div>
 							</form>
 						</div>
@@ -914,6 +904,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		function myfunction3()
+		{
+	confirm("Do you want to delete this?");
+		}
+	</script>
+	<script>const button = document.getElementById('myButton');
+		button.addEventListener('click', () => {
+		  window.location.href = 'search_result_admin.html';
+		});</script>
 </body>
 
 </html>

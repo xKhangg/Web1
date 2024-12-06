@@ -31,78 +31,93 @@
 </head>
 <!-- Start Header Area -->
 <header class="header_area sticky-header">
-    <div class="main_menu">
-        <nav class="navbar navbar-expand-lg navbar-light main_box">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index_login.html">
-                    <img src="img/electric-appliances.png" alt="" width="60">
-                    <span>I K E A</span>
-                </a>
-
+	<div class="main_menu">
+		<nav class="navbar navbar-expand-lg navbar-light main_box">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<a class="navbar-brand logo_h" href="index_admin.html">
+					<img src="img/electric-appliances.png" alt="" width="60">
+					<span>I K E A</span>
+				</a>
 				<div style="position: relative;border: 1px  black;border-radius: 32px;overflow: hidden;border-top: none;">
 					<input  type="text" placeholder="I want to search for...." style="border-radius: 32px; padding: 8px; width: 415px; border-width: 2px;  ">
 					<button id="myButton"style=" position: absolute; top: 0; right: 0; margin-top: 0px; padding: 10px 18px; display:inline-block; border: none;background-color: #ff6c00; cursor: pointer; "><span class="lnr lnr-magnifier" style="color: white;"></span></button> 
 					</div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index_login.html">Home</a></li>
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                             aria-expanded="false">Category</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="category_login.html">Television</a></li>
-                                <li class="nav-item"><a class="nav-link" href="category_login.html">Refrigerator</a></li>
-                                <li class="nav-item"><a class="nav-link" href="category_login.html">Washing Machine</a></li>
-                                <li class="nav-item"><a class="nav-link" href="category_login.html">Air Conditioner</a></li>
-                                <li class="nav-item"><a class="nav-link" href="category_login.html">Induction Stove</a></li>
-                            </ul>
-                        </li>
-                        
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+					<ul class="nav navbar-nav menu_nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index_admin.html">Home</a></li>
 						<li class="nav-item submenu dropdown">
 							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-							 aria-expanded="false">User</a>
+							 aria-expanded="false">Category</a>
 							<ul class="dropdown-menu">
-								<li class="nav-item"><a class="nav-link" href="user_information.html">Information</a></li>
-								<li class="nav-item"><a class="nav-link" href="order_history.html">Order History</a></li>
-								<li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Television</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Refrigerator</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Washing Machine</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Air Conditioner</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Induction Stove</a></li>
 							</ul>
 						</li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item"><a href="cart.html" class="cart"><span class="ti-bag"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    
+						 <!--
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Account</a>
+						</li> -->
+						<li class="nav-item submenu dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Admin</a>
+							 <ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="Admin_information.html">Information</a></li>
+								<li class="nav-item"><a class="nav-link" href="thongkekhachhang.html">User Statistics</a></li>
+								<li class="nav-item"><a class="nav-link" href="thongkemathang.html">Product Statistics</a></li>
+								<li class="nav-item"><a class="nav-link" href="bill_admin.html">Bill Manage</a></li>
+								<li class="nav-item"><a class="nav-link" href="Bill_filter.html">Bill Filter</a></li>
+								<li class="nav-item"><a class="nav-link" href="user_manage.html">User Manage</a></li>
+							</ul>
+						</li> <!--
+						<li class="nav-item submenu dropdown"> 
+							<a class="nav-link" href="contact.html">Contact</a> 
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Account</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+							</ul> 
+						</li> -->
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="nav-item"><span class="ti-bag"></span></a></li>
+					
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
 </header>
+<!-- End Header Area --> 
 <!-- Start Banner Area -->
 <section class="banner-area organic-breadcrumb">
     <div class="container">
         <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
             <div class="col-first">
-                <h1>Category Page</h1>
+                <h1>Search Result Page</h1>
                 <nav class="d-flex align-items-center">
-                    <a href="index_login.html">Home<span class="lnr lnr-arrow-right"></span></a>
-                    <a href="category_login.html">Category<span class="lnr lnr-arrow-right"></span></a>
-                    <a href="category_login.html">Television</a>
+                    <a href="index_admin.html">Home<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="#.html">Search<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="#">Result</a>
                 </nav>
             </div>
         </div>
     </div>
 </section>
 <!-- End Banner Area -->
-	<br>
-	<br>
+ <br>
+ <br>
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-3 col-lg-4 col-md-5">
@@ -140,7 +155,7 @@
 									<label for="Above 20.000.000">Above $1000</label>
 								</div>
     							<br>
-    							<a href="search_result_login.html">
+    							<a href="search_result_admin.html">
 									<input type="button" value="Find" style="border: 2px solid black; border-radius: 2px;"></input>
 								</a>
 								<button type="reset">Reset</button>
@@ -334,11 +349,11 @@
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product_login.html">
+								<a href="single-product_admin.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product_login.html">
+									<a href="single-product_admin.html">
 										<h6>TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV</h6>
 									</a>
 									<div class="price">
@@ -347,27 +362,27 @@
 									</div>
 									<div class="prd-bottom">
 
-										<a href="cart.html" class="social-info"  >
-											<span class="ti-bag"></span>
-											<p class="hover-text">add to bag</p>
-										</a>
-										<a href="cart.html" class="social-info" >
-											<span class="lnr lnr-heart"></span>
-											<p class="hover-text">Wishlist</p>
-										</a>
-										
+										<div class="prd-bottom">
+											<a href="edit-product.html" class="social-info">
+												<span class="lnr lnr-pencil"></span>
+												<p class="hover-text">Edit</p>
+											</a>
+											<a href="#" class="social-info" onclick="myfunction3()">
+												<span class="lnr lnr-cross"></span>
+												<p class="hover-text">Delete</p>
+											</a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<!-- single product -->
-						<div class="col-lg-4 col-md-6">
+						<!-- <div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product_login.html">
-									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
+								<a href="single-product.html">
+									<img class="img-fluid" src="img/product/TV_Samsung_4K.png" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product_login.html">
+									<a href="single-product.html">
 										<h6>Smart Tivi Samsung 4K 55 inch UA55CU8000</h6>
 									</a>
 									<div class="price">
@@ -376,26 +391,34 @@
 									</div>
 									<div class="prd-bottom">
 
-										<a href="cart.html" class="social-info"  >
+										<a href="" class="social-info">
 											<span class="ti-bag"></span>
 											<p class="hover-text">add to bag</p>
 										</a>
-										<a href="cart.html" class="social-info" >
+										<a href="" class="social-info">
 											<span class="lnr lnr-heart"></span>
 											<p class="hover-text">Wishlist</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-sync"></span>
+											<p class="hover-text">compare</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-move"></span>
+											<p class="hover-text">view more</p>
 										</a>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- single product -->
-						<div class="col-lg-4 col-md-6">
+						<!-- <div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product_login.html">
-									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
+								<a href="single-product.html">
+									<img class="img-fluid" src="img/product/Picture1111.png" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product_login.html">
+									<a href="single-product.html">
 										<h6>Google Tivi Aqua QLED 4K 55 inch AQT55S80EUX</h6>
 									</a>									
 									<div class="price">
@@ -404,26 +427,34 @@
 									</div>
 									<div class="prd-bottom">
 
-										<a href="cart.html" class="social-info"  >
+										<a href="" class="social-info">
 											<span class="ti-bag"></span>
 											<p class="hover-text">add to bag</p>
 										</a>
-										<a href="cart.html" class="social-info" >
+										<a href="" class="social-info">
 											<span class="lnr lnr-heart"></span>
 											<p class="hover-text">Wishlist</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-sync"></span>
+											<p class="hover-text">compare</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-move"></span>
+											<p class="hover-text">view more</p>
 										</a>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- single product -->
-						<div class="col-lg-4 col-md-6">
+						<!-- <div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product_login.html">
+								<a href="single-product.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_4K_Crystal.png" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product_login.html">
+									<a href="single-product.html">
 										<h6>Smart Tivi Samsung 4K Crystal UHD 70 inch UA70DU7000</h6>
 									</a>
 									<div class="price">
@@ -432,27 +463,35 @@
 									</div>
 									<div class="prd-bottom">
 
-										<a href="cart.html" class="social-info"  >
+										<a href="" class="social-info">
 											<span class="ti-bag"></span>
 											<p class="hover-text">add to bag</p>
 										</a>
-										<a href="cart.html" class="social-info" >
+										<a href="" class="social-info">
 											<span class="lnr lnr-heart"></span>
 											<p class="hover-text">Wishlist</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-sync"></span>
+											<p class="hover-text">compare</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-move"></span>
+											<p class="hover-text">view more</p>
 										</a>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- single product -->
-						<div class="col-lg-4 col-md-6">
+						<!-- <div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product_login.html">
-									<img class="img-fluid" src="img/product/TV_Samsung_4K_Crystal.png" alt="">
+								<a href="single-product.html">
+									<img class="img-fluid" src="img/product/LG_4K.png" alt="">
 								</a>								
 								<div class="product-details">
-									<a href="single-product_login.html">
-										<h6>Smart Tivi Samsung 4K Crystal UHD 70 inch UA70DU7000</h6>
+									<a href="single-product.html">
+										<h6>Smart Tivi NanoCell LG 4K 55 inch 55NANO76SQA</h6>
 									</a>
 									<div class="price">
 										<h6>$523.37</h6>
@@ -460,53 +499,70 @@
 									</div>
 									<div class="prd-bottom">
 
-										<a href="cart.html" class="social-info"  >
+										<a href="" class="social-info">
 											<span class="ti-bag"></span>
 											<p class="hover-text">add to bag</p>
 										</a>
-										<a href="cart.html" class="social-info" >
+										<a href="" class="social-info">
 											<span class="lnr lnr-heart"></span>
 											<p class="hover-text">Wishlist</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-sync"></span>
+											<p class="hover-text">compare</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-move"></span>
+											<p class="hover-text">view more</p>
 										</a>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- single product -->
-						<div class="col-lg-4 col-md-6">
+						<!-- <div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product_login.html">
-									<img class="img-fluid" src="img/product/TV_Samsung_4K_Crystal.png" alt="" height="200px">
+								<a href="single-product.html">
+									<img class="img-fluid" src="img/product/Samsung_4K.png" alt="" height="200px">
 								</a>
 								<div class="product-details">
-									<a href="single-product_login.html">
-										<h6>Smart Tivi Samsung 4K Crystal UHD 70 inch UA70DU7000</h6>
+									<a href="single-product.html">
+										<h6>Smart Tivi Samsung 4K 65 inch UA65CU8000</h6>
 									</a>
 									<div class="price">
 										<h6>$640.21</h6>
 										<h6 class="l-through">$210.00</h6>
 									</div>
 									<div class="prd-bottom">
-										<a href="cart.html" class="social-info"  >
+
+										<a href="" class="social-info">
 											<span class="ti-bag"></span>
 											<p class="hover-text">add to bag</p>
 										</a>
-										<a href="cart.html" class="social-info" >
+										<a href="" class="social-info">
 											<span class="lnr lnr-heart"></span>
 											<p class="hover-text">Wishlist</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-sync"></span>
+											<p class="hover-text">compare</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-move"></span>
+											<p class="hover-text">view more</p>
 										</a>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- single product -->
-						<div class="col-lg-4 col-md-6">
+						<!-- <div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product_login.html">
+								<a href="single-product.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product_login.html">
+									<a href="single-product.html">
 										<h6>TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV</h6>
 									</a>
 									<div class="price">
@@ -515,26 +571,34 @@
 									</div>
 									<div class="prd-bottom">
 
-										<a href="cart.html" class="social-info"  >
+										<a href="" class="social-info">
 											<span class="ti-bag"></span>
 											<p class="hover-text">add to bag</p>
 										</a>
-										<a href="cart.html" class="social-info" >
+										<a href="" class="social-info">
 											<span class="lnr lnr-heart"></span>
 											<p class="hover-text">Wishlist</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-sync"></span>
+											<p class="hover-text">compare</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-move"></span>
+											<p class="hover-text">view more</p>
 										</a>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- single product -->
-						<div class="col-lg-4 col-md-6">
+						<!-- <div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product_login.html">
+								<a href="single-product.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product_login.html">
+									<a href="single-product.html">
 										<h6>TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV</h6>
 									</a>
 									<div class="price">
@@ -543,26 +607,34 @@
 									</div>
 									<div class="prd-bottom">
 
-										<a href="cart.html" class="social-info"  >
+										<a href="" class="social-info">
 											<span class="ti-bag"></span>
 											<p class="hover-text">add to bag</p>
 										</a>
-										<a href="cart.html" class="social-info" >
+										<a href="" class="social-info">
 											<span class="lnr lnr-heart"></span>
 											<p class="hover-text">Wishlist</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-sync"></span>
+											<p class="hover-text">compare</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-move"></span>
+											<p class="hover-text">view more</p>
 										</a>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- single product -->
-						<div class="col-lg-4 col-md-6">
+						<!-- <div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<a href="single-product_login.html">
+								<a href="single-product.html">
 									<img class="img-fluid" src="img/product/TV_Samsung_MicroLed.jpg" alt="">
 								</a>
 								<div class="product-details">
-									<a href="single-product_login.html">
+									<a href="single-product.html">
 										<h6>TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV</h6>
 									</a>
 									<div class="price">
@@ -571,18 +643,26 @@
 									</div>
 									<div class="prd-bottom">
 
-										<a href="cart.html" class="social-info"  >
+										<a href="" class="social-info">
 											<span class="ti-bag"></span>
 											<p class="hover-text">add to bag</p>
 										</a>
-										<a href="cart.html" class="social-info" >
+										<a href="" class="social-info">
 											<span class="lnr lnr-heart"></span>
 											<p class="hover-text">Wishlist</p>
 										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-sync"></span>
+											<p class="hover-text">compare</p>
+										</a>
+										<a href="" class="social-info">
+											<span class="lnr lnr-move"></span>
+											<p class="hover-text">view more</p>
+										</a>
 									</div>
 								</div>
-							</div>
-						</div>
+							</div> 
+						</div> -->
 					</div>
 				</section>
 				<!-- End Best Seller -->
@@ -590,8 +670,8 @@
 				<div class="filter-bar d-flex flex-wrap align-items-center">
 					<div class="sorting mr-auto">
 						<select>
-							<option value="1">Show 9</option>
 							<option value="1">Show 6</option>
+							<option value="1">Show 9</option>
 							<option value="1">Show 12</option>
 						</select>
 					</div>
@@ -879,7 +959,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</div>
 
 
-
+	<script src="search.js"></script>
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 	 crossorigin="anonymous"></script>
@@ -890,15 +970,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/nouislider.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
-	<script src="search.js"></script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>const button = document.getElementById('myButton');
-		button.addEventListener('click', () => {
-		  window.location.href = 'search_result_login.html';
-		});</script>
+</body>	<script>const button = document.getElementById('myButton');
+	button.addEventListener('click', () => {
+	  window.location.href = 'search_result_admin.html';
+	});</script>
+			<script>
+				function myfunction3()
+				{
+			confirm("Do you want to delete this?");
+				}
+			</script>
+				<script src="js/main.js"></script>
+			
+
 </body>
 
 </html>

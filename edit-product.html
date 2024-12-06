@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/electric-appliances.png">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>IKEA</title>
+
+	<!--
+		CSS
+		============================================= -->
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<!-- Start Header Area -->
+<header class="header_area sticky-header">
+	<div class="main_menu">
+		<nav class="navbar navbar-expand-lg navbar-light main_box">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<a class="navbar-brand logo_h" href="index_admin.html">
+					<img src="img/electric-appliances.png" alt="" width="60">
+					<span>I K E A</span>
+				</a>
+				<div style="position: relative;border: 1px  black;border-radius: 32px;overflow: hidden;border-top: none;">
+					<input  type="text" placeholder="I want to search for...." style="border-radius: 32px; padding: 8px; width: 415px; border-width: 2px;  ">
+					<button id="myButton"style=" position: absolute; top: 0; right: 0; margin-top: 0px; padding: 10px 18px; display:inline-block; border: none;background-color: #ff6c00; cursor: pointer; "><span class="lnr lnr-magnifier" style="color: white;"></span></button> 
+					</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+					<ul class="nav navbar-nav menu_nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index_admin.html">Home</a></li>
+						<li class="nav-item submenu dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Category</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Television</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Refrigerator</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Washing Machine</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Air Conditioner</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Induction Stove</a></li>
+							</ul>
+						</li>
+						 <!--
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Account</a>
+						</li> -->
+						<li class="nav-item submenu dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Admin</a>
+							 <ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="Admin_information.html">Information</a></li>
+								<li class="nav-item"><a class="nav-link" href="thongkekhachhang.html">User Statistics</a></li>
+								<li class="nav-item"><a class="nav-link" href="thongkemathang.html">Product Statistics</a></li>
+								<li class="nav-item"><a class="nav-link" href="bill_admin.html">Bill Manage</a></li>
+								<li class="nav-item"><a class="nav-link" href="Bill_filter.html">Bill Filter</a></li>
+								<li class="nav-item"><a class="nav-link" href="user_manage.html">User Manage</a></li>
+							</ul>
+						</li> <!--
+						<li class="nav-item submenu dropdown"> 
+							<a class="nav-link" href="contact.html">Contact</a> 
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Account</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+							</ul> 
+						</li> -->
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="nav-item"><span class="ti-bag"></span></a></li>
+					
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+</header>
+<!-- End Header Area --> 
+	<!-- Start Banner Area -->
+	<section class="banner-area organic-breadcrumb">
+		<div class="container">
+			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+				<div class="col-first">
+					<h1>Admin Page</h1>
+					<nav class="d-flex align-items-center">
+						<a href="index_admin.html">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="#">Category<span class="lnr lnr-arrow-right"></span></a>
+						<a href="single-product.html">Edit Product</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Banner Area -->
+
+	<!--================Single Product Area =================-->
+	<div class="product_image_area">
+		<div class="container">
+			<div class="row s_product_inner">
+				<div class="col-lg-6">
+					<div class="s_Product_carousel">
+						<div class="single-prd-item">
+							<img class="img-fluid" src="img/category/10049141-tivi-micro-led-samsung-4k-99-inch-mna99ms1aacxxv-8.jpg" alt="">
+						</div>
+						<div class="single-prd-item">
+							<img class="img-fluid" src="img/category/micro-led-tivi-4k-samsung-mna99ms1aacxxv-99-inch-smart-tv-65u17M.jpg" alt="">
+						</div>
+						<div class="single-prd-item">
+							<img class="img-fluid" src="img/category/2wf7ijb38l34d.jpg" alt="">
+						</div>
+					</div>
+					<button style="margin-bottom: 25px; font-size: 20px;">Add Picture</button>
+					<br>
+					<button style="font-size: 20px;">Edit Picture</button>
+				</div>
+				<div class="col-lg-5 offset-lg-1">
+					<div class="s_product_text">
+						<label for="name">Name:</label>
+						<input type="text" id="name" value="TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV" style="width: 400px;">
+						<br>
+						<br>
+						
+						<label for="price">Price :</label>
+						<input type="text" id="price" value="$127,000">
+						<br>
+						<br>
+						<ul class="list">
+							<select name="" id="category">
+								<option value="">Type: TV</option>
+								<option value="">Type: Washing Machine</option>
+								<option value="">Type: Induction Stove</option>
+							</select>
+						</ul>
+						<br>
+						<br>
+						<br>
+						
+						<ul>
+							<label for="feature">Features:</label>
+							<br>
+							<textarea id="description" rows="25" cols="80">
+-Seamless Micro LED design with 4K resolution for sharp and clear display.
+
+-Micro Color 20-bit technology enhances vivid and pure color reproduction.
+								
+-Micro AI image processor analyzes and controls every self-emitted light.
+								
+-30,000:1 contrast ratio delivers high-quality, detailed images.
+								
+-AVA technology adjusts dialogue volume based on the external environment.
+								
+-5.2.2 channel speaker system with 80W power output for powerful and immersive sound.
+								
+-Integrated Google Assistant with Vietnamese support, along with Apple TV & AirPlay 2 applications.
+								</textarea>
+								
+			
+						</ul>
+						<!-- <div class="product_count">
+							<label for="qty">Quantity:</label>
+							<input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty"> 
+							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+							 class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
+							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+							 class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button> 
+						</div> -->
+						<div class="card_area d-flex align-items-center">
+							<a class="primary-btn" href="category_admin.html">Save</a>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================End Single Product Area =================-->
+
+	<!--================Product Description Area =================-->
+	<!-- <section class="product_description_area">
+		<div class="container">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Description</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+					 aria-selected="false">Specification</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+					 aria-selected="false">Comments</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review"
+					 aria-selected="false">Reviews</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+					<p style="font-size: 25px; font-weight: bold;">Kích thước màn hình lên đến 99 inch cho bạn trải nghiệm khung hình rộng mở và chi tiết hơn</p>
+					<p></p>TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV với kích cỡ màn hình lớn lên tới 99 inch cho bạn trải nghiệm nội dung được rộng mở hơn, mang đến tầm nhìn lớn hơn, chi tiết hơn và có chiều sâu hơn tạo cho bạn cảm giác như đang có mặt trực tiếp tại sân vận động hay nhà hát. Bên cạnh đó, thiết kế gần như tràn viền với đường nét tinh tế, thanh mảnh tăng vẻ sang trọng, tạo điểm nhấn cho không gian thêm phần hiện đại. Chẳng những thế, tivi còn trang bị công nghệ góc nhìn siêu rộng lên đến 160° để người dùng có thể thoải mái xem ở mọi góc độ mà không phải lo ngại bị chói lóa hay biến đổi màu sắc.</p>
+					<img src="img/product/detail1.jpg" alt="" width="1048" style="margin-bottom: 50px;">
+
+					<p style="font-size: 25px; font-weight: bold;">Độ phân giải 4K (UHD) mang đến hình ảnh sắc nét và sinh động</p>
+					<p>Tivi Micro LED Samsung 4K 99 inch MNA99MS1AACXXV với độ phân giải 4K (UHD) cho hình ảnh sắc nét gấp 4 lần màn hình có độ phân giải Full HD với hơn 8 triệu điểm ảnh mang đến cho bạn những trải nghiệm về hình ảnh được trọn vẹn và chân thực nhất. Bên cạnh đó, hình ảnh sẽ trở nên sống động hơn nhờ công nghệ chuyển màu Micro HDR cho bạn tận hưởng khung hình được trọn vẹn hơn.</p>
+					<img src="img/product/detail2.jpg" alt="" width="1048" style="margin-bottom: 50px;">
+					
+					<p style="font-size: 25px; font-weight: bold;">Tấm nền Micro LED và Micro Contrast mang đến hình ảnh sắc nét đến từng chi tiết </p>
+					<p>Tivi Micro LED Samsung 4K 99 inch MNA99MS1AACXXV sử dụng tấm nền Micro LED với hàng triệu bóng đèn LED siêu nhỏ hoạt động độc lập để tạo ra các điểm ảnh, mang lại hiệu suất ánh sáng vượt trội. Ngoài ra, tấm nền Micro LED còn giúp giảm thiểu hiện tượng lưu ảnh và có khả năng hoạt động bền vững lên tới 100.000 giờ.</p>
+					<p>Ngoài ra, Smart TV còn được trang bị công nghệ Micro Contrast cho phép điều khiển độc lập các pixel để làm nổi bật dải màu đen và trắng ở mức độ vi mô.</p>
+					<img src="img/product/detail3.jpg" alt="" width="1048" style="margin-bottom: 50px;">
+					
+					<p style="font-size: 25px; font-weight: bold;">Công nghệ Quantum Dot với 100% dải màu rực rỡ cho khung hình siêu thực</p>
+					<p>Tivi Micro LED Samsung 4K 99 inch MNA99MS1AACXXV trang bị công nghệ Quantum Dot sử dụng các chấm lượng tử với kích thước nano để tái tạo 100% dải màu sắc nhằm mang đến những chi tiết siêu thực dù khung hình có sáng rực rỡ hay tối tăm đi chăng nữa.</p>
+					<img src="img/product/detail4.jpg" alt="" width="1048">
+				</div>
+				<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>
+										<h5>Manufacturer</h5>
+									</td>
+									<td>
+										<h5>Samsung</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Model</h5>
+									</td>
+									<td>
+										<h5>MNA99MS1AACXXV</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Size</h5>
+									</td>
+									<td>
+										<h5>99 inch</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Color</h5>
+									</td>
+									<td>
+										<h5>Black</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Type</h5>
+									</td>
+									<td>
+										<h5>TV MicroLED</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Resolution</h5>
+									</td>
+									<td>
+										<h5>4K(UHD)</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Refresh Rate</h5>
+									</td>
+									<td>
+										<h5>120Hz</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Processor</h5>
+									</td>
+									<td>
+										<h5>Micro AI</h5>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="comment_list">
+								<div class="review_item">
+									<div class="media">
+										<div class="d-flex">
+											<img src="img/product/review-1.png" alt="">
+										</div>
+										<div class="media-body">
+											<h4>Blake Ruiz</h4>
+											<h5>12th Feb, 2018 at 05:56 pm</h5>
+											<a class="reply_btn" href="#">Reply</a>
+										</div>
+									</div>
+									<p>"The picture quality is phenomenal, with crisp colors and deep blacks. The smart TV features are intuitive, and the apps load quickly. Perfect for streaming movies or gaming!"</p>
+								</div>
+								<div class="review_item reply">
+									<div class="media">
+										<div class="d-flex">
+											<img src="img/product/review-2.png" alt="">
+										</div>
+										<div class="media-body">
+											<h4>Blake Ruiz</h4>
+											<h5>12th Feb, 2018 at 05:56 pm</h5>
+											<a class="reply_btn" href="#">Reply</a>
+										</div>
+									</div>
+									<p>"The sound quality is decent, but I had to purchase a soundbar for a better experience. The display is great for the price, but the remote feels a bit flimsy."</p>
+								</div>
+								<div class="review_item">
+									<div class="media">
+										<div class="d-flex">
+											<img src="img/product/review-3.png" alt="">
+										</div>
+										<div class="media-body">
+											<h4>Blake Ruiz</h4>
+											<h5>12th Feb, 2018 at 05:56 pm</h5>
+											<a class="reply_btn" href="#">Reply</a>
+										</div>
+									</div>
+									<p>"The TV started off great, but after a few months, the screen developed dead pixels. Customer support was unhelpful, making it a frustrating experience."</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="review_box">
+								<h4>Post a comment</h4>
+								<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name" name="name" placeholder="Your Full name">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="number" name="number" placeholder="Phone Number">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<div class="col-md-12 text-right">
+										<button type="submit" value="submit" class="btn primary-btn">Submit Now</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="review-tab">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="row total_rate">
+								<div class="col-6">
+									<div class="box_total">
+										<h5>Overall</h5>
+										<h4>4.0</h4>
+										<h6>(03 Reviews)</h6>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="rating_list">
+										<h3>Based on 3 Reviews</h3>
+										<ul class="list">
+											<li><a href="#">5 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+													 class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
+											<li><a href="#">4 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+													 class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
+											<li><a href="#">3 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+													 class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
+											<li><a href="#">2 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+													 class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
+											<li><a href="#">1 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+													 class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="review_list">
+								<div class="review_item">
+									<div class="media">
+										<div class="d-flex">
+											<img src="img/product/review-1.png" alt="">
+										</div>
+										<div class="media-body">
+											<h4>Blake Ruiz</h4>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+									</div>
+									<p>"This TV exceeded my expectations! The 4K resolution is stunning, and the HDR makes everything look so lifelike. It was easy to set up, and the thin bezel design looks modern and sleek."</p>
+								</div>
+								<div class="review_item">
+									<div class="media">
+										<div class="d-flex">
+											<img src="img/product/review-2.png" alt="">
+										</div>
+										<div class="media-body">
+											<h4>Blake Ruiz</h4>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+									</div>
+									<p>"The TV's picture quality is good, but the interface can be slow at times. Also, the built-in speakers don't deliver much bass, so a sound system is a must."</p>
+								</div>
+								<div class="review_item">
+									<div class="media">
+										<div class="d-flex">
+											<img src="img/product/review-3.png" alt="">
+										</div>
+										<div class="media-body">
+											<h4>Blake Ruiz</h4>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+									</div>
+									<p>"I had high hopes for this TV, but the screen brightness is uneven, especially in dark scenes. The remote also feels unresponsive, making navigation frustrating."</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="review_box">
+								<h4>Add a Review</h4>
+								<p>Your Rating:</p>
+								<ul class="list">
+									<li><a href="#"><i class="fa fa-star"></i></a></li>
+									<li><a href="#"><i class="fa fa-star"></i></a></li>
+									<li><a href="#"><i class="fa fa-star"></i></a></li>
+									<li><a href="#"><i class="fa fa-star"></i></a></li>
+									<li><a href="#"><i class="fa fa-star"></i></a></li>
+								</ul>
+								<p>Outstanding</p>
+								<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name" name="name" placeholder="Your Full name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Full name'">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="email" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="number" name="number" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea class="form-control" name="message" id="message" rows="1" placeholder="Review" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Review'"></textarea></textarea>
+										</div>
+									</div>
+									<div class="col-md-12 text-right">
+										<button type="submit" value="submit" class="primary-btn">Submit Now</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!--================End Product Description Area =================-->
+
+	<br>
+	<br>
+	<!-- start footer Area -->
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>About Us</h6>
+						<p>Team 6 Project for selling Household Appliances and Electronics</p>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>Newsletter</h6>
+						<p>Stay update with our latest</p>
+						<div class="" id="mc_embed_signup">
+
+							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+							 method="get" class="form-inline">
+
+								
+								<div class="info"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget mail-chimp">
+						<h6 class="mb-20">Instragram Feed</h6>
+						<ul class="instafeed d-flex flex-wrap">
+							<li><img src="img/i1.jpg" alt=""></li>
+							<li><img src="img/i2.jpg" alt=""></li>
+							<li><img src="img/i3.jpg" alt=""></li>
+							<li><img src="img/i4.jpg" alt=""></li>
+							<li><img src="img/i5.jpg" alt=""></li>
+							<li><img src="img/i6.jpg" alt=""></li>
+							<li><img src="img/i7.jpg" alt=""></li>
+							<li><img src="img/i8.jpg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>Follow Us</h6>
+						<p>Let us be social</p>
+						<div class="footer-social d-flex align-items-center">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+				<p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+	 crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>const button = document.getElementById('myButton');
+		button.addEventListener('click', () => {
+		  window.location.href = 'search_result_admin.html';
+		});</script>
+</body>
+
+</html>

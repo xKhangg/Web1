@@ -47,82 +47,6 @@
             background-color: #f2f2f2;
         }
     </style>
-    <style>
-        /* Bố trí dạng dòng với khoảng cách giữa các phần tử */
-        #filterRow {
-          display: flex;
-          align-items: center; /* Căn giữa theo chiều dọc */
-          gap: 10px; /* Khoảng cách giữa các phần tử */
-          flex-wrap: wrap; /* Xuống dòng nếu không đủ không gian */
-        }
-      
-        #filterRow label {
-          margin: 0;
-          font-weight: bold; /* In đậm label */
-        }
-      
-        #filterRow input,
-        #filterRow select {
-          padding: 5px;
-          font-size: 14px;
-        }
-      </style>
-	<style>
-		.container12345 {
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		  height: 80px; /* Chiều cao container */
-		}
-	</style>
-    <script>
-        const table = document.querySelector('table');
-        const dateFilter = document.getElementById('dateFind');
-    
-        function dateFilterTable(){
-    
-            const inputDate = dateFilter.value.trim();
-            const rows = table.querySelectorAll('tbody tr');
-    
-            rows.forEach(row => {
-                const dateCell = row.cells[0];
-                if(dateCell.textContent === inputDate){
-                    row.style.display = '';
-                }
-                else{
-                    row.style.display = 'none';
-                }
-    
-            });
-        }
-        dateFilter.addEventListener('input', dateFilterTable);
-    
-        const statusFilter = document.getElementById('statusFilter');
-            const districtFilter = document.getElementById('districtFilter');
-    
-            function filterTable() {
-                const selectedStatus = statusFilter.value;
-                const selectedDistrict = districtFilter.value;
-    
-                const rows = table.querySelectorAll('tbody tr');
-    
-                rows.forEach(row => {
-                    const statusCell = row.cells[4];
-                    const districtCell = row.cells[2];
-    
-                    if ((selectedStatus === 'all' || statusCell.textContent === selectedStatus) &&
-                        (selectedDistrict === 'all' || districtCell.textContent === selectedDistrict)) {
-                        row.style.display = '';
-                    } else {
-                        row.style.display = 'none';
-                    }
-                });
-            }
-    
-        statusFilter.addEventListener('change', filterTable);
-        districtFilter.addEventListener('change', filterTable);
-    
-    </script>
 </head>
 
 <body>
@@ -204,51 +128,80 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Admin Information Page</h1>
+					<h1>Order History Page</h1>
 					<nav class="d-flex align-items-center">
 						<a href="index_admin.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#">Admin information</a>
-						
+						<a href="#">Order History</a>
+					
 					</nav>
 				</div>
 			</div>
 		</div>
 	</section> 
 	<!-- End Banner Area -->
-    <br>
-    <br>
-    <div style="text-align: center">
-        <table>
+	<br>
+	<br>
+	<br>
+    <table>
+        <thead>
             <tr>
-                <th rowspan="8" style="text-align: left; width: 250px;">
-                    <img src="img/images.jpg" alt="" height="300">
-                </th>
-                <td style="text-align: left">Admin Name: Nguyen Van B </td>
+				<th>Date</th>
+                <th>Bill ID</th>
+                <th>Shipping Unit</th>
+                <th>Order Status</th>
+                <th>Details</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
-                <td style="text-align: left">Admin ID: 12345678</td>
-            </tr>
+                <td>2024-11-23</td>
+                <td>DH12345</td>
+                <td>Giao hàng nhanh</td>
+                <td>Delivering</td>
+                <td>
+					<a href="order_detail_admin.html">
+						<button>More Detail</button>
+					</a>
+				</td>
+             </tr>
             <tr>
-                <td style="text-align: left">Gender: Male</td>
-            </tr>
-            <tr>
-                <td style="text-align: left">Admin Rank: MOD</td>
-            </tr>
-            <tr>
-                <td style="text-align: left">Birthday: 1/1/2000</td>
-            </tr>
-            <tr>
-                <td style="text-align: left">Phone Number: 0906791873</td>
-            </tr>
-            <tr>
-                <td style="text-align: left">Email: nguyenvanb@gmail.com</td>
-            </tr>
-      
-        </table>
-    </div>
-    <br>
-    <br>
-    <!-- start footer Area -->
+        <td>2024-11-25</td>
+        <td>DH67890</td>
+        <td>Viettel Post</td>
+        <td>Delivered</td>
+        <td>
+			<a href="order_detail_admin.html">
+				<button>More Detail</button>
+			</a>
+      </tr>
+      <tr>
+        <td>2024-11-28</td>
+        <td>DH23456</td>
+        <td>Giao hàng nhanh</td>
+        <td>Cancelled</td>
+        <td>
+			<a href="order_detail_admin.html">
+				<button>More Detail</button>
+		</td>
+      </tr>
+      <tr>
+        <td>2024-12-01</td>
+        <td>DH78901</td>
+        <td>Grab Express</td>
+        <td>Not processed</td>
+        <td>
+			<a href="order_detail_admin.html">
+				<button>More Detail</button>
+			</a>
+		</td>
+      </tr>
+
+            </tbody>
+    </table>
+	<br>
+	<br>
+	<br>
+	<!-- start footer Area -->
 	<footer class="footer-area section_gap">
 		<div class="container">
 			<div class="row">
@@ -324,10 +277,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
       <script src="js/gmaps.min.js"></script>
       <script src="js/main.js"></script>
-	</body>	<script>const button = document.getElementById('myButton');
+	  <script>const button = document.getElementById('myButton');
 		button.addEventListener('click', () => {
 		  window.location.href = 'search_result_admin.html';
 		});</script>
+		
+		
     </body>
 
 </html>    

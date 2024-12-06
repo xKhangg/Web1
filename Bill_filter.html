@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/electric-appliances.png">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>IKEA</title>
+	<!--
+		CSS
+		============================================= -->
+	<link rel="stylesheet" href="css/linearicons.css"> 
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.css" />
+	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+
+<style>
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+<style>
+    /* Bố trí dạng dòng với khoảng cách giữa các phần tử */
+    #filterRow {
+      display: flex;
+      align-items: center; /* Căn giữa theo chiều dọc */
+      gap: 10px; /* Khoảng cách giữa các phần tử */
+      flex-wrap: wrap; /* Xuống dòng nếu không đủ không gian */
+    }
+  
+    #filterRow label {
+      margin: 0;
+      font-weight: bold; /* In đậm label */
+    }
+  
+    #filterRow input,
+    #filterRow select {
+      padding: 5px;
+      font-size: 14px;
+    }
+  </style>
+<style>
+    .container12345 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px; /* Chiều cao container */
+    }
+</style>
+</head>
+<body>
+	
+<!-- Start Header Area -->
+<header class="header_area sticky-header">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light main_box">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="index_admin.html">
+                    <img src="img/electric-appliances.png" alt="" width="60">
+                    <span>I K E A</span>
+                </a>
+                <div style="position: relative;border: 1px  black;border-radius: 32px;overflow: hidden;border-top: none;">
+                    <input  type="text" placeholder="I want to search for...." style="border-radius: 32px; padding: 8px; width: 415px; border-width: 2px;  ">
+                    <button id="myButton"style=" position: absolute; top: 0; right: 0; margin-top: 0px; padding: 10px 18px; display:inline-block; border: none;background-color: #ff6c00; cursor: pointer; "><span class="lnr lnr-magnifier" style="color: white;"></span></button> 
+                    </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index_admin.html">Home</a></li>
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                             aria-expanded="false">Category</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="category_admin.html">Television</a></li>
+                                <li class="nav-item"><a class="nav-link" href="category_admin.html">Refrigerator</a></li>
+                                <li class="nav-item"><a class="nav-link" href="category_admin.html">Washing Machine</a></li>
+                                <li class="nav-item"><a class="nav-link" href="category_admin.html">Air Conditioner</a></li>
+                                <li class="nav-item"><a class="nav-link" href="category_admin.html">Induction Stove</a></li>
+                            </ul>
+                        </li>
+                         <!--
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Account</a>
+                        </li> -->
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                             aria-expanded="false">Admin</a>
+                             <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="Admin_information.html">Information</a></li>
+                                <li class="nav-item"><a class="nav-link" href="thongkekhachhang.html">User Statistics</a></li>
+                                <li class="nav-item"><a class="nav-link" href="thongkemathang.html">Product Statistics</a></li>
+                                <li class="nav-item"><a class="nav-link" href="bill_admin.html">Bill Manage</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Bill_filter.html">Bill Filter</a></li>
+                                <li class="nav-item"><a class="nav-link" href="user_manage.html">User Manage</a></li>
+                            </ul>
+                        </li> <!--
+                        <li class="nav-item submenu dropdown"> 
+                            <a class="nav-link" href="contact.html">Contact</a> 
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                             aria-expanded="false">Account</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                            </ul> 
+                        </li> -->
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><span class="ti-bag"></span></a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+</header>
+<!-- End Header Area --> 
+    <!-- Start Banner Area --> 
+	<section class="banner-area organic-breadcrumb">
+		<div class="container">
+			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+				<div class="col-first">
+					<h1>Bill Filter Page</h1>
+					<nav class="d-flex align-items-center">
+						<a href="index_admin.html">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="#">Admin<span class="lnr lnr-arrow-right"></span></a>
+						<a href="#">Bill Filter</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section> 
+	<!-- End Banner Area -->
+     <br>
+     <br>
+     <br>
+<label for="monthSelect" class="selection-container" style="margin-left: 200px; font-size: 16px;">From: </label>
+<select id="monthSelect" class="selection-container" style="font-size: 16px;">
+    <option value="january">01/01/2024</option>
+    <option value="february">01/02/2024</option>
+    <option value="march">01/03/2024</option>
+    <option value="april">01/04/2024</option>
+    <option value="may">01/05/2024</option>
+    <option value="june">01/06/2024</option>
+    <option value="july">01/07/2024</option>
+    <option value="august">01/08/2024</option>
+    <option value="september">01/09/2024</option>
+    <option value="october">01/10/2024</option>
+    <option value="november">01/11/2024</option>
+    <option value="december">01/12/2024</option>
+</select>
+<label for="monthSelect1" class="selection-container" style="margin-left: 25px; font-size: 16px;">To: </label>
+<select id="monthSelect1" class="selection-container" style="font-size: 16px;">
+    <option value="january">31/01/2024</option>
+    <option value="february">29/02/2024</option>
+    <option value="march">31/03/2024</option>
+    <option value="april">31/04/2024</option>
+    <option value="may">31/05/2024</option>
+    <option value="june">30/06/2024</option>
+    <option value="july">31/07/2024</option>
+    <option value="august">31/08/2024</option>
+    <option value="september">30/09/2024</option>
+    <option value="october">31/10/2024</option>
+    <option value="november">30/11/2024</option>
+    <option value="december">31/12/2024</option>
+</select>
+<label for="statusFilter" style="font-size: 16px;">Status:</label>
+<select id="statusFilter" style="font-size: 16px;">
+    <option value="all">ALL</option>
+    <option value="Delivering">Delivering</option>
+    <option value="Delivered">Delivered</option>
+    <option value="Cancelled">Cancelled</option>
+    <option value="Not processed">Not processed</option>
+</select>
+<label for="districtFilter" style="font-size: 16px;">District:</label>
+<select id="districtFilter" style="font-size: 16px;">
+    <option value="all">ALL</option>
+    <option value="District 1">District 1</option>
+    <option value="District 3">District 3</option>
+    <option value="District 5">District 5</option>
+    <option value="District 7">District 7</option>
+</select>
+<button onclick="filterTable()" style="font-size: 16px;">Filter</button>
+
+              </div>
+        </td>
+</div>
+ <br>
+ <br>
+ <br>
+<table>
+    <thead>
+        <tr>
+            <th>Purchased Date</th>
+            <th>Bill ID</th>
+            <th>Address</th>
+            <th>Express Unit</th>
+            <th>Status</th>
+            <th>Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2024-11-23</td>
+            <td>DH12345</td>
+            <td>District 7</td>
+            <td>GHN</td>
+            <td>Delivering</td>
+            <td>
+                <a href="order_detail_admin.html">
+                    <button>More Detail</button>
+                </a>
+            </td>
+         </tr>
+        <tr>
+    <td>2024-11-25</td>
+    <td>DH67890</td>
+    <td>District 1</td>
+    <td>Viettel Post</td>
+    <td>Delivered</td>
+    <td>
+        <a href="order_detail_admin.html">
+            <button>More Detail</button>
+        </a>
+  </tr>
+  <tr>
+    <td>2024-11-28</td>
+    <td>DH23456</td>
+    <td>District 3</td>
+    <td>GHN</td>
+    <td>Cancelled</td>
+    <td>
+        <a href="order_detail_admin.html">
+            <button>More Detail</button>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td>2024-12-01</td>
+    <td>DH78901</td>
+    <td>District 5</td>
+    <td>Grab Express</td>
+    <td>Not processed</td>
+    <td>
+        <a href="order_detail_admin.html">
+            <button>More Detail</button>
+        </a>
+    </td>
+   <tbody>
+  <table>
+
+  </tr>
+  <br>
+  <br>
+    <!-- <tr>
+    <!-- start footer Area -->
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>About Us</h6>
+						<p>Team 6 Project for selling Household Appliances and Electronics</p>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>Newsletter</h6>
+						<p>Stay update with our latest</p>
+						<div class="" id="mc_embed_signup">
+
+							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+							 method="get" class="form-inline">
+
+								
+								<div class="info"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget mail-chimp">
+						<h6 class="mb-20">Instragram Feed</h6>
+						<ul class="instafeed d-flex flex-wrap">
+							<li><img src="img/i1.jpg" alt=""></li>
+							<li><img src="img/i2.jpg" alt=""></li>
+							<li><img src="img/i3.jpg" alt=""></li>
+							<li><img src="img/i4.jpg" alt=""></li>
+							<li><img src="img/i5.jpg" alt=""></li>
+							<li><img src="img/i6.jpg" alt=""></li>
+							<li><img src="img/i7.jpg" alt=""></li>
+							<li><img src="img/i8.jpg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>Follow Us</h6>
+						<p>Let us be social</p>
+						<div class="footer-social d-flex align-items-center">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+				<p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+<script>const button = document.getElementById('myButton');
+	button.addEventListener('click', () => {
+	  window.location.href = 'search_result_admin.html';
+	});</script>
+ </body>
+
+</html>    

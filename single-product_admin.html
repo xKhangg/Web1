@@ -16,19 +16,17 @@
 	<meta charset="UTF-8">
 	<!-- Site Title -->
 	<title>IKEA</title>
+
 	<!--
 		CSS
 		============================================= -->
 	<link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/themify-icons.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/nouislider.min.css">
-	<link rel="stylesheet" href="css/ion.rangeSlider.css" />
-	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -40,11 +38,11 @@
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html">
+					<a class="navbar-brand logo_h" href="index_admin.html">
 						<img src="img/electric-appliances.png" alt="" width="60">
 						<span>I K E A</span>
 					</a>
-					<div style="position: relative;border: 1px  black;border-radius: 32px;overflow: hidden;border-top: none;">
+                    <div style="position: relative;border: 1px  black;border-radius: 32px;overflow: hidden;border-top: none;">
 						<input  type="text" placeholder="I want to search for...." style="border-radius: 32px; padding: 8px; width: 415px; border-width: 2px;  ">
 						<button id="myButton"style=" position: absolute; top: 0; right: 0; margin-top: 0px; padding: 10px 18px; display:inline-block; border: none;background-color: #ff6c00; cursor: pointer; "><span class="lnr lnr-magnifier" style="color: white;"></span></button> 
 						</div>
@@ -62,11 +60,11 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Category</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="category.html">Television</a></li>
-									<li class="nav-item"><a class="nav-link" href="category.html">Refrigerator</a></li>
-									<li class="nav-item"><a class="nav-link" href="category.html">Washing Machine</a></li>
-									<li class="nav-item"><a class="nav-link" href="category.html">Air Conditioner</a></li>
-									<li class="nav-item"><a class="nav-link" href="category.html">Induction Stove</a></li>
+									<li class="nav-item"><a class="nav-link" href="category_admin.html">Television</a></li>
+									<li class="nav-item"><a class="nav-link" href="category_admin.html">Refrigerator</a></li>
+									<li class="nav-item"><a class="nav-link" href="category_admin.html">Washing Machine</a></li>
+									<li class="nav-item"><a class="nav-link" href="category_admin.html">Air Conditioner</a></li>
+									<li class="nav-item"><a class="nav-link" href="category_admin.html">Induction Stove</a></li>
 								</ul>
 							</li>
 							 <!--
@@ -75,10 +73,14 @@
 							</li> -->
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Account</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-									<li class="nav-item"><a class="nav-link" href="registration.html">Register</a></li>
+								 aria-expanded="false">Admin</a>
+								 <ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="Admin_information.html">Information</a></li>
+									<li class="nav-item"><a class="nav-link" href="thongkekhachhang.html">User Statistics</a></li>
+									<li class="nav-item"><a class="nav-link" href="thongkemathang.html">Product Statistics</a></li>
+									<li class="nav-item"><a class="nav-link" href="bill_admin.html">Bill Manage</a></li>
+									<li class="nav-item"><a class="nav-link" href="Bill_filter.html">Bill Filter</a></li>
+									<li class="nav-item"><a class="nav-link" href="user_manage.html">User Manage</a></li>
 								</ul>
 							</li> <!--
 							<li class="nav-item submenu dropdown"> 
@@ -91,7 +93,7 @@
 							</li> -->
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><a href="#" onclick="myfunction()"><span class="ti-bag"></span></a></li>
+							<li class="nav-item"><span class="ti-bag"></span></a></li>
 						
 						</ul>
 					</div>
@@ -100,18 +102,18 @@
 		</div>
 		
 	</header>
-	<!-- End Header Area -->
-
+	<!-- End Header Area --> 
 
 	<!-- Start Banner Area -->
 	<section class="banner-area organic-breadcrumb">
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Login/Register</h1>
+					<h1>Product Details Page</h1>
 					<nav class="d-flex align-items-center">
 						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Login/Register</a>
+						<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
+						<a href="single-product.html">Product-Details</a>
 					</nav>
 				</div>
 			</div>
@@ -119,47 +121,55 @@
 	</section>
 	<!-- End Banner Area -->
 
-	<!--================Login Box Area =================-->
-	<section class="login_box_area section_gap">
+	<!--================Single Product Area =================-->
+	<div class="product_image_area">
 		<div class="container">
-			<div class="row">
+			<div class="row s_product_inner">
 				<div class="col-lg-6">
-					<div class="login_box_img">
-						<img class="img-fluid" src="img/login.jpg" alt="">
-						<div class="hover">
-							<h4>New to our website?</h4>
-							<a class="primary-btn" href="registration.html">Create an Account</a>
+					<div class="s_Product_carousel">
+						<div class="single-prd-item">
+							<img class="img-fluid" src="img/category/10049141-tivi-micro-led-samsung-4k-99-inch-mna99ms1aacxxv-8.jpg" alt="">
+						</div>
+						<div class="single-prd-item">
+							<img class="img-fluid" src="img/category/micro-led-tivi-4k-samsung-mna99ms1aacxxv-99-inch-smart-tv-65u17M.jpg" alt="">
+						</div>
+						<div class="single-prd-item">
+							<img class="img-fluid" src="img/category/2wf7ijb38l34d.jpg" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="login_form_inner">
-						<h3>Log in to enter</h3>
-						<form class="row login_form" method="post" id="contactForm" novalidate="novalidate">
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="password" class="form-control" id="name" name="name" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-							</div>
-							<div class="col-md-12 form-group">
-								<div class="creat_account">
-									<input type="checkbox" id="f-option2" name="selector">
-									<label for="f-option2">Keep me logged in</label>
-								</div>
-							</div>
-							<div class="col-md-12 form-group">
-								<!-- <button type="submit" value="submit" class="primary-btn" href="index_login.html">Log In</button> -->
-								<a href="index_login.html" class="primary-btn" style="color: white;">Login</a>
-								<a href="#">Forgot Password?</a>
-							</div>
-						</form>
+				<div class="col-lg-5 offset-lg-1 " style="display: inline-block; position: relative; bottom: 71px;" >
+					<div class="s_product_text">
+						<h3>TV Micro LED Samsung 4K 99 inch MNA99MS1AACXXV</h3>
+						<h2>$127,000.00</h2>
+						<ul class="list">
+							<li><a class="active" href="#"><span>Category</span> : Household-Appliances/TV</a></li>
+							<li><a href="#"><span>Availibility</span> : In Stock</a></li>
+						</ul>
+						<ul>
+							<li style="font-weight: bold; text-decoration: underline;">Features: </li>
+							<li>- Seamless Micro LED design with 4K resolution for sharp and clear display.							</li>
+							<li>- Micro Color 20-bit technology enhances vivid and pure color reproduction.</li>
+							<li>- Micro AI image processor analyzes and controls every self-emitted light.</li>
+							<li>- 30,000:1 contrast ratio delivers high-quality, detailed images.</li>
+							<li>- AVA technology adjusts dialogue volume based on the external environment.</li>
+							<li>- 5.2.2 channel speaker system with 80W power output for powerful and immersive sound.</li>
+							<li>- Integrated Google Assistant with Vietnamese support, along with Apple TV & AirPlay 2 applications.</li>
+						</ul>
+						
+						<div class="card_area d-flex align-items-center">
+						
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================End Login Box Area =================-->
+	</div>
+	
+	<!--================End Single Product Area =================-->
+
+	
+	
 
 	<!-- start footer Area -->
 	<footer class="footer-area section_gap">
@@ -224,7 +234,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</footer>
 	<!-- End footer Area -->
 
-
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 	 crossorigin="anonymous"></script>
@@ -239,16 +248,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>const button = document.getElementById('myButton');
-		button.addEventListener('click', () => {
-		  window.location.href = 'search_result.html';
-		});</script>
-	<script>
-		function myfunction()
-		{
-			alert("You must login to do this");
-		}
-	</script>
+	<script src="js/main.js"></script>
+</body>	<script>const button = document.getElementById('myButton');
+	button.addEventListener('click', () => {
+	  window.location.href = 'search_result_admin.html';
+	});</script>
+	
+
 </body>
 
 </html>

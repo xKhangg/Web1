@@ -61,7 +61,10 @@
 						<img src="img/electric-appliances.png" alt="" width="60">
 						<span>I K E A</span>
 					</a>
-					<input type="text" placeholder="I want to search for...." style="border-radius: 32px; padding: 8px; width: 415px;"  >
+					<div style="position: relative;border: 1px  black;border-radius: 32px;overflow: hidden;border-top: none;">
+						<input  type="text" placeholder="I want to search for...." style="border-radius: 32px; padding: 8px; width: 415px; border-width: 2px;  ">
+						<button id="myButton"style=" position: absolute; top: 0; right: 0; margin-top: 0px; padding: 10px 18px; display:inline-block; border: none;background-color: #ff6c00; cursor: pointer; "><span class="lnr lnr-magnifier" style="color: white;"></span></button> 
+						</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -122,11 +125,11 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Card Information Page</h1>
+					<h1>Order History Page</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="cart.html">Shopping-Cart<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#">Proceed to Paypal</a>
+						<a href="index_login.html">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="#.html">Order History</a>
+						
 					</nav>
 				</div>
 			</div>
@@ -139,11 +142,11 @@
     <table>
         <thead>
             <tr>
-                <th>Ngày mua</th>
-                <th>Mã đơn</th>
-                <th>Đơn vị vận chuyển</th>
-                <th>Trạng thái</th>
-                <th>Chi tiết</th>
+                <th>Date</th>
+                <th>Bill ID</th>
+                <th>Shipping Unit</th>
+                <th>Order Status</th>
+                <th>Details</th>
             </tr>
         </thead>
         <tbody>
@@ -151,10 +154,10 @@
                 <td>2024-11-23</td>
                 <td>DH12345</td>
                 <td>Giao hàng nhanh</td>
-                <td>Đang giao hàng</td>
+                <td>Delivering</td>
                 <td>
 					<a href="order_detail.html">
-						<button>Xem chi tiết</button>
+						<button>More Detail</button>
 					</a>
 				</td>
              </tr>
@@ -162,20 +165,20 @@
         <td>2024-11-25</td>
         <td>DH67890</td>
         <td>Viettel Post</td>
-        <td>Đã giao hàng</td>
+        <td>Delivered</td>
         <td>
 			<a href="order_detail.html">
-				<button>Xem chi tiết</button>
+				<button>More Detail</button>
 			</a>
       </tr>
       <tr>
         <td>2024-11-28</td>
         <td>DH23456</td>
         <td>Giao hàng nhanh</td>
-        <td>Đang xử lý</td>
+        <td>Cancelled </td>
         <td>
 			<a href="order_detail.html">
-				<button>Xem chi tiết</button>
+				<button>More Detail</button>
 			</a>
 		</td>
       </tr>
@@ -183,10 +186,10 @@
         <td>2024-12-01</td>
         <td>DH78901</td>
         <td>Grab Express</td>
-        <td>Hủy đơn</td>
+        <td>Not processed</td>
         <td>
 			<a href="order_detail.html">
-				<button>Xem chi tiết</button>
+				<button>More Detail</button>
 			</a>
 		</td>
       </tr>
@@ -215,21 +218,7 @@
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
 							 method="get" class="form-inline">
 
-								<div class="d-flex flex-row">
-
-									<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
-									 required="" type="email">
-
-
-									<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-									<div style="position: absolute; left: -5000px;">
-										<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-									</div>
-
-									<!-- <div class="col-lg-4 col-md-4">
-												<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-											</div>  -->
-								</div>
+								
 								<div class="info"></div>
 							</form>
 						</div>
@@ -287,5 +276,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       <script src="js/gmaps.min.js"></script>
       <script src="js/main.js"></script>
     </body>
+	<script>const button = document.getElementById('myButton');
+		button.addEventListener('click', () => {
+		  window.location.href = 'search_result_login.html';
+		});</script>
 
 </html>    

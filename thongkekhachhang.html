@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
-
+<html lang="en">
 <head>
-	<!-- Mobile Specific Meta -->
+  <!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Favicon-->
 	<link rel="shortcut icon" href="img/electric-appliances.png">
@@ -13,13 +12,13 @@
 	<!-- Meta Keyword -->
 	<meta name="keywords" content="">
 	<!-- meta character set -->
-	<meta charset="UTF-8">
+	<meta charset="UTF-8">	
 	<!-- Site Title -->
 	<title>IKEA</title>
 	<!--
 		CSS
 		============================================= -->
-	<link rel="stylesheet" href="css/linearicons.css"> 
+	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -29,181 +28,253 @@
 	<link rel="stylesheet" href="css/ion.rangeSlider.css" />
 	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/main.css">
-	<style>
-        table {
+	<link rel="stylesheet" href="css/main.css">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+        .table-style {
+            width: 80%; /* Điều chỉnh chiều rộng bảng */
+            margin: 0 auto; /* Căn giữa bảng */
             border-collapse: collapse;
-            margin: 0 auto;
-            width: 80%;
         }
-
-        th, td {
-            border: 1px solid #ddd;
+        .table-style th, .table-style td {
             padding: 8px;
             text-align: center;
+            border-bottom: 1px solid #ddd;
+            border-right: 1px solid #ddd;
         }
-
-        th {
+        .table-style th {
             background-color: #f2f2f2;
+        }
+        .table-style td:last-child, .table-style th:last-child {
+            border-right: none;
+        }
+        .link-style {
+            display: inline-block;
+            padding: 6px 12px; /* Adjust padding to match the button */
+            background-color: #f2f2f2;
+            color: black;
+            border: 1px solid black;
+            text-decoration: none;
+            cursor: pointer; /* Make it look like a button */
+        }
+        .link-style:hover {
+            background-color: #d3d3d3;
+            
+        }
+        .input-style {
+            margin-bottom: 20px;
+            padding: 5px;
+        }
+        .button-style {
+            padding: 6px 12px;
+            margin-left: 25px;
+        }
+        .id-column {
+            width: 50px;
+        }
+        .name-column {
+            width: 200px; /* Điều chỉnh độ rộng */
+        }
+        .revenue-column {
+            width: 100px;
+        }
+        .invoice-column {
+            width: 150px; /* Điều chỉnh độ rộng */
+            
+        }
+        .date-selection {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .date-selection label, .date-selection select {
+            margin: 0;
+        }
+        .table-container {
+            margin-top: 40px; /* Tăng khoảng cách trên bảng */
         }
     </style>
 </head>
-
 <body>
-	
-	<!-- Start Header Area -->
-	<header class="header_area sticky-header">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light main_box">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index_admin.html">
-						<img src="img/electric-appliances.png" alt="" width="60">
-						<span>I K E A</span>
-					</a>
-                    <input type="text" placeholder="I want to search for...." style="border-radius: 32px; padding: 8px; width: 415px;" id="search_input"  >
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Category</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="category_admin.html">Television</a></li>
-									<li class="nav-item"><a class="nav-link" href="category_admin.html">Refrigerator</a></li>
-									<li class="nav-item"><a class="nav-link" href="category_admin.html">Washing Machine</a></li>
-									<li class="nav-item"><a class="nav-link" href="category_admin.html">Air Conditioner</a></li>
-									<li class="nav-item"><a class="nav-link" href="category_admin.html">Induction Stove</a></li>
-								</ul>
-							</li>
-							 <!--
-							<li class="nav-item">
-								<a class="nav-link" href="login.html">Account</a>
-							</li> -->
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Admin</a>
-								<ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="Admin_information.html">Information</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="thongkekhachhang.html">User Statistics</a></li>
-									<li class="nav-item"><a class="nav-link" href="thongkemathang.html">Product Statistics</a></li>
-									<li class="nav-item"><a class="nav-link" href="bill_admin.html">Bill Manage</a></li>
-								</ul>
-							</li> <!--
-							<li class="nav-item submenu dropdown"> 
-								<a class="nav-link" href="contact.html">Contact</a> 
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Account</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-								</ul> 
-							</li> -->
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><span class="ti-bag"></span></a></li>
-						
-						</ul>
+   <!-- Start Header Area -->
+<header class="header_area sticky-header">
+	<div class="main_menu">
+		<nav class="navbar navbar-expand-lg navbar-light main_box">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<a class="navbar-brand logo_h" href="index_admin.html">
+					<img src="img/electric-appliances.png" alt="" width="60">
+					<span>I K E A</span>
+				</a>
+				<div style="position: relative;border: 1px  black;border-radius: 32px;overflow: hidden;border-top: none;">
+					<input  type="text" placeholder="I want to search for...." style="border-radius: 32px; padding: 8px; width: 415px; border-width: 2px;  ">
+					<button id="myButton"style=" position: absolute; top: 0; right: 0; margin-top: 0px; padding: 10px 18px; display:inline-block; border: none;background-color: #ff6c00; cursor: pointer; "><span class="lnr lnr-magnifier" style="color: white;"></span></button> 
 					</div>
-				</div>
-			</nav>
-		</div>
-		
-	</header>
-	<!-- End Header Area --> 
-
-    <!-- Start Banner Area --> 
-	<section class="banner-area organic-breadcrumb">
-		<div class="container">
-			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
-				<div class="col-first">
-					<h1>Admin Page</h1>
-					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="cart.html">Admin<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#">User Statistics</a>
-					</nav>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+					<ul class="nav navbar-nav menu_nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index_admin.html">Home</a></li>
+						<li class="nav-item submenu dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Category</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Television</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Refrigerator</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Washing Machine</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Air Conditioner</a></li>
+								<li class="nav-item"><a class="nav-link" href="category_admin.html">Induction Stove</a></li>
+							</ul>
+						</li>
+						 <!--
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Account</a>
+						</li> -->
+						<li class="nav-item submenu dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Admin</a>
+                             <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="Admin_information.html">Information</a></li>
+                                <li class="nav-item"><a class="nav-link" href="thongkekhachhang.html">User Statistics</a></li>
+                                <li class="nav-item"><a class="nav-link" href="thongkemathang.html">Product Statistics</a></li>
+                                <li class="nav-item"><a class="nav-link" href="bill_admin.html">Bill Manage</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Bill_filter.html">Bill Filter</a></li>
+                                <li class="nav-item"><a class="nav-link" href="user_manage.html">User Manage</a></li>
+                            </ul>
+						</li> <!--
+						<li class="nav-item submenu dropdown"> 
+							<a class="nav-link" href="contact.html">Contact</a> 
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							 aria-expanded="false">Account</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+							</ul> 
+						</li> -->
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="nav-item"><span class="ti-bag"></span></a></li>
+					
+					</ul>
 				</div>
 			</div>
-		</div>
-	</section> 
-	<!-- End Banner Area -->
+		</nav>
+	</div>
+	
+</header>
+<!-- End Header Area --> 
 
-<body>
-    <div style="padding-left: 150px;">
-    <select id="customerSelect" onchange="updateTable()" >
-        <option value="all">Tất cả khách hàng</option>
-        <option value="top5">5 khách hàng có doanh thu cao nhất</option>
-    </select>
+	<!-- Start Banner Area -->
+<section class="banner-area organic-breadcrumb">
+    <div class="container">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            <div class="col-first">
+                <h1>User Statistics Page</h1>
+                <nav class="d-flex align-items-center">
+                    <a href="index_admin.html">Home<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="#">Admin<span class="lnr lnr-arrow-right"></span></a>
+                    <a href="#">User Statistics</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Banner Area -->
+ 
+    <div class="selection-container" style="position: relative; left:150px; top:50px" >
+        
+        <select id="customerSelect" class="input-style"  >
+            <option value="all">All Customers</option>
+            <option value="top5">Top 5 Customers by Revenue</option>
+        </select>
+    </div>
+    <div class="selection-container date-selection" style="margin-left: 400px; position: relative; top:50px">
+        <label for="monthSelect">From:</label>
+        <select id="monthSelect" class="input-style">
+            <option value="january">01/01/2024</option>
+            <option value="february">01/02/2024</option>
+            <option value="march">01/03/2024</option>
+            <option value="april">01/04/2024</option>
+            <option value="may">01/05/2024</option>
+            <option value="june">01/06/2024</option>
+            <option value="july">01/07/2024</option>
+            <option value="august">01/08/2024</option>
+            <option value="september">01/09/2024</option>
+            <option value="october">01/10/2024</option>
+            <option value="november">01/11/2024</option>
+            <option value="december">01/12/2024</option>
+        </select>
+        <label for="monthSelect1">To:</label>
+        <select id="monthSelect1" class="input-style">
+            <option value="january">31/01/2024</option>
+            <option value="february">29/02/2024</option>
+            <option value="march">31/03/2024</option>
+            <option value="april">30/04/2024</option>
+            <option value="may">31/05/2024</option>
+            <option value="june">30/06/2024</option>
+            <option value="july">31/07/2024</option>
+            <option value="august">31/08/2024</option>
+            <option value="september">30/09/2024</option>
+            <option value="october">31/10/2024</option>
+            <option value="november">30/11/2024</option>
+            <option value="december">31/12/2024</option>
+        </select>
+        <button class="button-style" style="position: relative;bottom:9.5px; ">Filter</button>
+    </div>
+    <div class="table-container">
+        <table id="customerTable" class="table-style">
+            <thead>
+                <tr>
+                    <th class="id-column">ID</th>
+                    <th class="name-column">Customer Name</th>
+                    <th class="revenue-column">Revenue</th>
+                    <th class="invoice-column">Invoice</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Maria Anders</td>
+                    <td>5000</td>
+                    <td class="invoice-column"><a href="order_history_admin.html" target="_blank" class="link-style">View Invoice</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Antonio Moreno</td>
+                    <td>2000</td>
+                    <td class="invoice-column"><a href="order_history_admin.html" target="_blank" class="link-style">View Invoice</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Thomas Hardy</td>
+                    <td>8000</td>
+                    <td class="invoice-column"><a href="order_history_admin.html" target="_blank" class="link-style">View Invoice</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Yang Wang</td>
+                    <td>4000</td>
+                    <td class="invoice-column"><a href="order_history_admin.html" target="_blank" class="link-style">View Invoice</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Mario Pontes </td>
+                    <td>10000</td>
+                    <td class="invoice-column"><a href="order_history_admin.html" target="_blank" class="link-style">View Invoice</a></td>
+                
+            </tbody>
+        </table>
     </div>
     <br>
     <br>
-    <br>
-    <table id="customerTable">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Tên Khách Hàng</th>
-                <th>Doanh Thu</th>
-                <th>Hoá Đơn</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Dữ liệu khách hàng sẽ được cập nhật bởi JavaScript -->
-        </tbody>
-    </table>
-
-    <script>
-        const customers = [
-            { id: 1, name: "Khách hàng A", revenue: 5000, link: "https://example.com/invoiceA" },
-            { id: 2, name: "Khách hàng B", revenue: 2000,  link: "https://example.com/invoiceB" },
-            { id: 3, name: "Khách hàng C", revenue: 8000,  link: "https://example.com/invoiceC" },
-            { id: 4, name: "Khách hàng D", revenue: 4000, link: "https://example.com/invoiceD" },
-            { id: 5, name: "Khách hàng E", revenue: 10000,  link: "https://example.com/invoiceE" },
-            { id: 6, name: "Khách hàng F", revenue: 7000,  link: "https://example.com/invoiceF" },
-            { id: 7, name: "Khách hàng G", revenue: 5000,  link: "https://example.com/invoiceF" },
-            { id: 8, name: "Khách hàng H", revenue: 11000, link: "https://example.com/invoiceF" },
-        ];
-
-        function getTopCustomers(customers) {
-            return customers.slice().sort((a, b) => b.revenue - a.revenue).slice(0, 5);
-        }
-
-        function updateTable() {
-            const select = document.getElementById('customerSelect');
-            const selectedOption = select.value;
-            const tbody = document.querySelector('#customerTable tbody');
-            tbody.innerHTML = '';  // Xóa dữ liệu cũ
-
-            let customerList = [];
-            if (selectedOption === 'top5') {
-                customerList = getTopCustomers(customers);
-            } else {
-                customerList = customers;
-            }
-
-            customerList.forEach(customer => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${customer.id}</td>
-                    <td>${customer.name}</td>
-                    <td>${customer.revenue}</td>
-                    <td><button onclick="window.open('order_history.html', '_blank')">Xem Hoá Đơn</button></td>
-                `;
-                tbody.appendChild(row);
-            });
-        }
-
-        // Hiển thị tất cả khách hàng khi trang được tải
-        window.onload = updateTable;
-    </script>
-    <!-- start footer Area -->
+    
+   <!-- start footer Area -->
 	<footer class="footer-area section_gap">
 		<div class="container">
 			<div class="row">
@@ -222,21 +293,7 @@
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
 							 method="get" class="form-inline">
 
-								<div class="d-flex flex-row">
-
-									<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
-									 required="" type="email">
-
-
-									<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-									<div style="position: absolute; left: -5000px;">
-										<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-									</div>
-
-									<!-- <div class="col-lg-4 col-md-4">
-												<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-											</div>  -->
-								</div>
+								
 								<div class="info"></div>
 							</form>
 						</div>
@@ -279,20 +336,26 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</footer>
 	<!-- End footer Area -->
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-    crossorigin="anonymous"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/nouislider.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
 
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+	 crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/main.js"></script>
+</body>	<script>const button = document.getElementById('myButton');
+	button.addEventListener('click', () => {
+	  window.location.href = 'search_result_admin.html';
+	});</script>
+
+</body>
 </html>
